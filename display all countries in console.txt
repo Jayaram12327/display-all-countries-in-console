@@ -1,0 +1,9 @@
+let jayaram = new XMLHttpRequest();
+jayaram.open("GET","https://restcountries.com/v3.1/all");
+jayaram.onload = function(){
+    console.log(jayaram.response);
+}
+jayaram.onerror = function(){
+    console.log(jayaram.response);
+}
+jayaram.send();
